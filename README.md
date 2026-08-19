@@ -558,12 +558,365 @@ networkwalks.com
 info@networkwalks.com
 ```
 
-### 8.4 W2-PM4 — theHarvester-Based Footprinting Attacks
+## 8.4 W2-PM4 — theHarvester-Based Footprinting Attacks
 
-Evidence collected while performing OSINT-based reconnaissance using
-theHarvester on Kali Linux.
+### Objective
 
-<!-- PM4 screenshots will be inserted here -->
+The objective of this practical module was to perform passive footprinting and Open-Source Intelligence (OSINT) reconnaissance using **theHarvester** on Kali Linux.
+
+theHarvester is an OSINT reconnaissance tool that can collect publicly available information associated with a target domain from multiple search engines, APIs, and external data sources.
+
+During this practical activity, theHarvester was launched and examined, a targeted Baidu reconnaissance scan was performed, and a broader multi-source scan was executed. The activity also demonstrated how some external OSINT sources require API keys before they can be queried successfully.
+
+> **Ethical Use Notice:** This practical activity was performed strictly for authorized educational and cybersecurity training purposes. The activity was limited to passive OSINT collection of publicly available information. No exploitation, unauthorized access, credential attacks, or modification of external systems was performed.
+
+---
+
+### Step 1 — Launch theHarvester
+
+theHarvester was located from the Kali Linux application menu and launched in the Kali Linux virtual machine.
+
+This confirmed that the reconnaissance tool was available in the environment and ready for use.
+
+![theHarvester Application](screenshots/W2-PM4/01-theHarvester-Application.png)
+
+---
+
+### Step 2 — Review theHarvester Help Options
+
+Before performing reconnaissance, the available theHarvester options were reviewed.
+
+The help output provides information about parameters such as:
+
+- Target domain
+- Search result limit
+- Data source selection
+- DNS-related options
+- Screenshots
+- Output files
+- Wordlists
+- API scanning
+- Supported OSINT sources
+
+![theHarvester Help Options](screenshots/W2-PM4/02-theHarvester-Help-Options.png)
+
+---
+
+### Step 3 — Execute theHarvester Help Command
+
+The following command was executed to display theHarvester's command-line help:
+
+```bash
+theHarvester -h
+```
+
+The command displayed the available syntax and parameters supported by the installed version of theHarvester.
+
+The help information was reviewed before beginning the reconnaissance activity to ensure that the correct command syntax and data-source parameters were used.
+
+![theHarvester Help Command](screenshots/W2-PM4/03-theHarvester-Help-Command.png)
+
+---
+
+### Step 4 — Perform a Baidu-Based Reconnaissance Scan
+
+A targeted reconnaissance scan was performed against the assigned public domain using the **Baidu** data source.
+
+The following command was executed:
+
+```bash
+theHarvester -d microsoft.com -l 1000 -b baidu
+```
+
+Command explanation:
+
+- `theHarvester` — launches the reconnaissance tool.
+- `-d microsoft.com` — specifies `microsoft.com` as the target domain.
+- `-l 1000` — specifies the maximum number of search results.
+- `-b baidu` — instructs theHarvester to use Baidu as the search source.
+
+The tool then began searching the selected source for publicly available information associated with the target domain.
+
+![theHarvester Baidu Scan](screenshots/W2-PM4/04-theHarvester-Baidu-Scan.png)
+
+---
+
+### Step 5 — Review the Baidu Reconnaissance Results
+
+The Baidu-based reconnaissance scan completed and returned publicly available information associated with the target domain.
+
+The captured results showed:
+
+```text
+Target: microsoft.com
+Source: Baidu
+IPs found: 0
+Emails found: 1
+People found: 0
+Hosts found: 2
+```
+
+The email address displayed by the tool was:
+
+```text
+viva-noreply@microsoft.com
+```
+
+The hosts displayed in the results were:
+
+```text
+hxd.research.microsoft.com
+officedn.microsoft.com
+```
+
+These findings demonstrated how passive OSINT reconnaissance can identify publicly exposed domain-related information without exploiting or gaining unauthorized access to the target infrastructure.
+
+![theHarvester Baidu Results](screenshots/W2-PM4/05-theHarvester-Baidu-Results.png)
+
+---
+
+### Step 6 — Open a New Terminal
+
+After completing the targeted Baidu reconnaissance activity, a new Kali Linux terminal session was opened.
+
+The new terminal was used to perform a broader reconnaissance scan involving multiple available theHarvester sources.
+
+![theHarvester New Terminal](screenshots/W2-PM4/06-theHarvester-New-Terminal.png)
+
+---
+
+### Step 7 — Execute an All-Sources Reconnaissance Scan
+
+A broader reconnaissance scan was initiated using the following command:
+
+```bash
+theHarvester -d microsoft.com -l 50 -b all
+```
+
+Command explanation:
+
+- `theHarvester` — launches the OSINT reconnaissance tool.
+- `-d microsoft.com` — defines the target domain.
+- `-l 50` — limits the number of results.
+- `-b all` — instructs theHarvester to attempt reconnaissance using its available sources.
+
+This command allowed the behavior of multiple OSINT providers to be observed during a single reconnaissance operation.
+
+![theHarvester All Sources Scan](screenshots/W2-PM4/07-theHarvester-All-Sources-Scan.png)
+
+---
+
+### Step 8 — Observe Initial API-Key Errors
+
+During the all-sources scan, theHarvester attempted to access several external reconnaissance services.
+
+Some services could not be queried because their API keys were not configured.
+
+The output displayed messages indicating missing API keys or failed searches for some providers.
+
+This demonstrated an important limitation of the `-b all` option: although theHarvester supports many external sources, some of them require separate credentials or API keys.
+
+![theHarvester API Key Errors 01](screenshots/W2-PM4/08-theHarvester-API-Key-Errors-01.png)
+
+---
+
+### Step 9 — Continue Reviewing API-Key Requirements
+
+The reconnaissance operation continued processing additional sources.
+
+More API-dependent services displayed missing-key or configuration messages.
+
+Examples visible during the broader scan included services such as:
+
+- Bevigil
+- Bitbucket
+- BuiltWith
+- Brave Search
+- Censys
+- Criminal IP
+- Dehashed
+- DNSDumpster
+
+These messages did not indicate a failure of theHarvester itself. Instead, they showed that individual external providers required credentials that were not configured in the local environment.
+
+![theHarvester API Key Errors 02](screenshots/W2-PM4/09-theHarvester-API-Key-Errors-02.png)
+
+---
+
+### Step 10 — Continue Processing External Sources
+
+theHarvester continued attempting to query additional supported OSINT services.
+
+Additional API-dependent sources were encountered, including services such as:
+
+- FullHunt
+- GitHub
+- GitHub Code
+- Have I Been Pwned
+- Hunter
+- HunterHow
+- IntelX
+- Netlas
+
+The output demonstrated that theHarvester can integrate with many external reconnaissance services, but full functionality requires appropriate API configuration for providers that do not permit anonymous queries.
+
+![theHarvester API Key Errors 03](screenshots/W2-PM4/10-theHarvester-API-Key-Errors-03.png)
+
+---
+
+### Step 11 — Review Additional Source Requirements
+
+The all-sources scan continued through further OSINT providers.
+
+Additional API requirements were displayed for sources such as:
+
+- Onyphe
+- PentestTools
+- ProjectDiscovery
+- RocketReach
+- SecurityScorecard
+- SecurityTrails
+- Shodan
+- Tomba
+- Venacus
+- VirusTotal
+- WhoisXML
+- ZoomEye
+
+Although some sources were unavailable because credentials were missing, theHarvester continued processing other sources that were accessible.
+
+![theHarvester API Key Errors 04](screenshots/W2-PM4/11-theHarvester-API-Key-Errors-04.png)
+
+---
+
+### Step 12 — Monitor the Multi-Source Search Progress
+
+The reconnaissance scan continued after processing the API-dependent providers.
+
+The terminal showed theHarvester moving through multiple search sources and attempting to retrieve publicly available information associated with the target domain.
+
+This demonstrated the automated multi-source reconnaissance capabilities provided by theHarvester.
+
+![theHarvester Search Progress](screenshots/W2-PM4/12-theHarvester-Search-Progress.png)
+
+---
+
+### Step 13 — Review Hudson Rock Results
+
+During the broader reconnaissance scan, **Hudson Rock** successfully processed information associated with the target domain.
+
+The captured terminal output showed Hudson Rock processing the target and extracting host-related information.
+
+The screenshot also demonstrated that theHarvester continued moving to additional sources after processing the Hudson Rock results.
+
+![theHarvester HudsonRock Results](screenshots/W2-PM4/13-theHarvester-HudsonRock-Results.png)
+
+---
+
+### Step 14 — Review Additional Search Results
+
+After the Hudson Rock stage, theHarvester continued searching additional available OSINT sources.
+
+The scan demonstrated that a single theHarvester operation can cycle through numerous reconnaissance providers and aggregate information where those providers are accessible.
+
+Some sources produced results, while others generated errors because of unavailable API credentials or provider-specific restrictions.
+
+![theHarvester Additional Search Results](screenshots/W2-PM4/14-theHarvester-Additional-Search-Results.png)
+
+---
+
+### Step 15 — Review the Final Reconnaissance Results
+
+The final stage of the multi-source reconnaissance operation was reviewed.
+
+The complete exercise demonstrated several important aspects of OSINT-based footprinting:
+
+- Using Kali Linux for passive reconnaissance.
+- Launching and operating theHarvester.
+- Reviewing command-line parameters.
+- Selecting a specific reconnaissance source.
+- Performing domain-based reconnaissance.
+- Discovering publicly available email information.
+- Discovering publicly available host information.
+- Running a broader multi-source reconnaissance operation.
+- Understanding API-key requirements.
+- Identifying unavailable external sources.
+- Monitoring reconnaissance progress.
+- Reviewing information returned by accessible OSINT sources.
+- Documenting the reconnaissance workflow through screenshots.
+
+![theHarvester Final Results](screenshots/W2-PM4/15-theHarvester-Final-Results.png)
+
+---
+
+### Commands Used
+
+The primary commands used during W2-PM4 were:
+
+```bash
+theHarvester -h
+```
+
+```bash
+theHarvester -d microsoft.com -l 1000 -b baidu
+```
+
+```bash
+theHarvester -d microsoft.com -l 50 -b all
+```
+
+---
+
+### Key Findings
+
+The targeted Baidu reconnaissance scan successfully returned publicly available information associated with the selected domain.
+
+The captured output included:
+
+```text
+Emails found: 1
+Hosts found: 2
+IPs found: 0
+People found: 0
+```
+
+The broader `-b all` reconnaissance scan demonstrated that theHarvester supports numerous external OSINT providers. However, many of these providers require API credentials before their data can be accessed.
+
+This highlighted the difference between freely accessible reconnaissance sources and API-dependent intelligence providers.
+
+---
+
+### Skills Practiced
+
+This practical module provided hands-on experience with:
+
+- Open-Source Intelligence (OSINT)
+- Passive reconnaissance
+- Domain footprinting
+- Email discovery
+- Host discovery
+- Kali Linux
+- Linux terminal commands
+- theHarvester
+- Search-source selection
+- Multi-source reconnaissance
+- API-dependent OSINT services
+- Reconnaissance result analysis
+- Cybersecurity documentation
+
+---
+
+### W2-PM4 Result
+
+**W2-PM4 — theHarvester-Based Footprinting Attacks was completed successfully.**
+
+The activity demonstrated how theHarvester can be used during the reconnaissance and footprinting phase of a cybersecurity assessment to collect publicly available information associated with a target domain.
+
+A targeted Baidu search successfully returned publicly available email and host information. A broader all-sources scan was then used to demonstrate multi-source OSINT reconnaissance and the API-key requirements associated with several external intelligence providers.
+
+The exercise remained within passive OSINT and educational cybersecurity activities. No exploitation, unauthorized system access, credential attacks, or modification of the target infrastructure was performed.
+
+---
 
 ### 8.5 W2-PM5 — Zenmap-Based Network Scanning
 

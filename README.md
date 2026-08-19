@@ -395,10 +395,124 @@ footprinting activities using Google search operators.
 
 ### 8.3 W2-PM3 — Maltego-Based Footprinting Attacks
 
-Evidence collected while performing footprinting and OSINT activities
-using Maltego on a Windows PC.
+Evidence collected while performing footprinting and OSINT activities using Maltego Graph on a Windows PC.
 
-<!-- PM3 screenshots will be inserted here -->
+#### Objective
+
+The objective of this practical module was to install and configure Maltego Graph and use its OSINT capabilities to gather publicly available information associated with the authorized training domain `networkwalks.com`.
+
+---
+
+#### Step 1 — Download Maltego Graph
+
+Maltego Graph for Windows was downloaded from the official Maltego website.
+
+![Maltego Graph Download](screenshots/W2-PM3/01-maltego-download.png)
+
+---
+
+#### Step 2 — Install Maltego and Java Runtime Environment
+
+The Maltego installer was executed with administrator privileges. The required Java Runtime Environment (JRE 17) was installed successfully before completing the Maltego installation.
+
+![Maltego Installer](screenshots/W2-PM3/02-maltego-installer.png)
+
+![Java JRE Installation](screenshots/W2-PM3/03-java-jre-installation.png)
+
+![Maltego Installation](screenshots/W2-PM3/04-maltego-installation.png)
+
+---
+
+#### Step 3 — Launch and Configure Maltego
+
+After installation, Maltego Graph Desktop was launched and the initial configuration process was started.
+
+![Maltego Activation](screenshots/W2-PM3/05-maltego-activation.png)
+
+The Maltego license agreement was accepted to continue the configuration.
+
+![Maltego License Agreement](screenshots/W2-PM3/06-license-agreement.png)
+
+---
+
+#### Step 4 — Authenticate with Maltego ID
+
+Browser-based authentication was used to sign in with a Maltego ID.
+
+> **Note:** Personal account information was redacted from the public project evidence.
+
+![Maltego Login](screenshots/W2-PM3/07-maltego-login-redacted.png)
+
+Authentication completed successfully.
+
+![Authentication Complete](screenshots/W2-PM3/08-authentication-complete.png)
+
+The Maltego desktop application confirmed that the browser login was successful.
+
+![Browser Login Successful](screenshots/W2-PM3/09-browser-login-successful.png)
+
+---
+
+#### Step 5 — Configure Data Sources
+
+The Utilities data source was selected during the initial Maltego configuration.
+
+![Select Data Sources](screenshots/W2-PM3/10-select-data-sources.png)
+
+The Maltego client was then initialized successfully and became ready for use.
+
+![Maltego Ready](screenshots/W2-PM3/11-maltego-ready.png)
+
+---
+
+#### Step 6 — Create the Target Domain Entity
+
+A new Maltego graph was created and a Domain entity was added for the authorized training target:
+
+`networkwalks.com`
+
+![NetworkWalks Domain Entity](screenshots/W2-PM3/12-networkwalks-domain.png)
+
+The Domain entity properties were verified to ensure that the correct target was configured.
+
+![NetworkWalks Domain Properties](screenshots/W2-PM3/13-domain-properties.png)
+
+---
+
+#### Step 7 — Search for Email Transforms
+
+The available transforms were searched for email-related reconnaissance capabilities.
+
+The following Utilities transform was selected:
+
+`To Emails @domain [Search Engine]`
+
+![Email Transform Selection](screenshots/W2-PM3/14-email-transform.png)
+
+---
+
+#### Step 8 — Execute the Email Discovery Transform
+
+The email discovery transform was executed against `networkwalks.com`.
+
+The transform returned the following publicly discoverable email address:
+
+`info@networkwalks.com`
+
+![Email Transform Result](screenshots/W2-PM3/15-email-transform-result.png)
+
+---
+
+#### Step 9 — Final Maltego Result
+
+The completed Maltego graph displayed the relationship between the target domain and the discovered email address:
+
+```text
+networkwalks.com
+       |
+       v
+info@networkwalks.com
+```
 
 ### 8.4 W2-PM4 — theHarvester-Based Footprinting Attacks
 

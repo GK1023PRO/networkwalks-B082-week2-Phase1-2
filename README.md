@@ -213,28 +213,110 @@ The activities also reinforced the importance of clearly documenting the methodo
 
 ### 8.1 W2-PM1 — Footprinting with Multiple Kali Tools
 
-Evidence collected while performing authorized footprinting and
-reconnaissance using Kali Linux.
+Evidence collected while performing authorized footprinting and reconnaissance using Kali Linux.
+
+---
 
 #### 8.1.1 WHOIS
 
-WHOIS was used to retrieve publicly available domain registration
-information for the authorized target, including registration details,
-name-server information, and related domain infrastructure.
+WHOIS was used to retrieve publicly available domain registration information for the authorized target, including registration details, name-server information, and related domain infrastructure.
 
 **Evidence:**
 
 ![WHOIS Evidence](screenshots/W2-PM1/WHOIS.png)
 
-#### Problem Encountered
+---
 
-[Your actual WHOIS problem from the practical exercise.]
+#### 8.1.2 WhatWeb
 
-#### Solution
+WhatWeb was used to identify technologies exposed by the authorized target website. The results identified WordPress 7.0.4 and WP Download Manager 3.3.58, along with other information exposed by the website.
 
-[The actual solution you performed.]
+**Evidence:**
 
-![WHOIS Problem and Solution](screenshots/W2-PM1/<actual-solution-screenshot>.png)
+![WhatWeb Evidence](screenshots/W2-PM1/WhatWeb.png)
+
+---
+
+#### 8.1.3 Nslookup
+
+Nslookup was used to resolve the authorized target domain name to its associated IP address. The result identified the following IP address:
+
+`192.232.216.135`
+
+**Evidence:**
+
+![Nslookup Evidence](screenshots/W2-PM1/Nslookup.png)
+
+---
+
+#### 8.1.4 Curl
+
+Curl was used with the `-I` option to inspect the HTTP response headers returned by the authorized target website. The results provided additional information about the web application and exposed a reference to the WordPress REST API endpoint `/wp-json/`.
+
+**Command:**
+
+```bash
+curl -I https://networkwalks.com
+```
+
+**Evidence:**
+
+![Curl Evidence](screenshots/W2-PM1/Curl%20(curl%20-I).png)
+
+---
+
+#### 8.1.5 WafW00f
+
+WafW00f was used to determine whether a Web Application Firewall (WAF) was protecting the authorized target website. The result identified ModSecurity (SpiderLabs) as the Web Application Firewall technology.
+
+**Evidence:**
+
+![WafW00f Evidence](screenshots/W2-PM1/WafW00f.png)
+
+---
+
+#### 8.1.6 DNSRecon
+
+DNSRecon was used to perform DNS reconnaissance against the authorized target. The results provided information related to name servers, mail servers, SPF/TXT records, service records, and other available DNS information.
+
+**Evidence:**
+
+![DNSRecon Evidence](screenshots/W2-PM1/DNSRecon.png)
+
+---
+
+#### 8.1.7 Problems Encountered & Solutions
+
+During W2-PM1, I encountered network and DNS resolution problems while attempting to use the reconnaissance tools from Kali Linux.
+
+**Problem Encountered**
+
+The WHOIS command initially failed and returned the following error:
+
+```text
+getaddrinfo(whois.verisign-grs.com): Temporary failure in name resolution
+```
+
+The problem indicated that Kali Linux was unable to properly resolve the WHOIS server hostname. Additional connectivity and DNS tests were performed to determine whether the issue was related to Internet connectivity, DNS configuration, or the virtual machine network configuration.
+
+**Solution**
+
+The network configuration of the Kali Linux virtual machine was reviewed and corrected. The VirtualBox network adapter was configured using the required NAT Network configuration.
+
+After correcting the network configuration, Kali Linux received the appropriate network settings, including:
+
+```text
+IP Address:      10.0.2.3/24
+Default Gateway: 10.0.2.1
+```
+
+Connectivity and DNS resolution were tested again. Once Internet connectivity and DNS name resolution were restored, the WHOIS command successfully connected to the remote WHOIS service and returned the publicly available registration information for the authorized target.
+
+The remaining footprinting tools — WhatWeb, Nslookup, Curl, WafW00f, and DNSRecon — could then be executed successfully as part of the authorized reconnaissance exercise.
+
+**Problems Encountered & Solutions Evidence:**
+
+<!-- Insert the relevant uploaded Problems Encountered & Solutions screenshots here. -->
 
 ### 8.2 W2-PM2 — GHDB-Based Footprinting Attacks
 

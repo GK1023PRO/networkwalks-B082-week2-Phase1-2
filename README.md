@@ -318,7 +318,7 @@ The remaining footprinting tools — WhatWeb, Nslookup, Curl, WafW00f, and DNSRe
 
 The following screenshots document the problems encountered during the W2-PM1 practical exercise, the troubleshooting process performed, and the solutions applied.
 
-![Problem Encountered and Solution 1](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions.png)
+![Problem Encountered and Solution 1](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions.png?raw=1)
 
 ![Problem Encountered and Solution 2](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions%20(2).png)
 

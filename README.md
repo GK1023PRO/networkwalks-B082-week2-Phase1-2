@@ -407,11 +407,11 @@ The objective of this practical module was to install and configure Maltego Grap
 
 The official Maltego website was accessed to obtain Maltego Graph for Windows.
 
-![Maltego Official Website](Screenshots/W2-PM3/01-Maltego-Official-Website.png)
+![Maltego Official Website](screenshots/W2-PM3/01-Maltego-Official-Website.png)
 
 The Maltego download page was then opened.
 
-![Maltego Download Menu](Screenshots/W2-PM3/02-Maltego-Download-Menu.png)
+![Maltego Download Menu](screenshots/W2-PM3/02-Maltego-Download-Menu.png)
 
 ---
 
@@ -419,11 +419,11 @@ The Maltego download page was then opened.
 
 Maltego Graph for Windows was selected from the official download page.
 
-![Maltego Graph Windows Download](Screenshots/W2-PM3/03-Maltego-Graph-Windows-Download.png)
+![Maltego Graph Windows Download](screenshots/W2-PM3/03-Maltego-Graph-Windows-Download.png)
 
 The Windows installer was downloaded successfully.
 
-![Maltego Installer Downloaded](Screenshots/W2-PM3/04-Maltego-Installer-Downloaded.png)
+![Maltego Installer Downloaded](screenshots/W2-PM3/04-Maltego-Installer-Downloaded.png)
 
 ---
 
@@ -431,7 +431,7 @@ The Windows installer was downloaded successfully.
 
 The downloaded Maltego installer was executed with administrator privileges.
 
-![Maltego Run as Administrator](Screenshots/W2-PM3/05-Maltego-Run-as-Administrator.png)
+![Maltego Run as Administrator](screenshots/W2-PM3/05-Maltego-Run-as-Administrator.png)
 
 ---
 
@@ -439,15 +439,15 @@ The downloaded Maltego installer was executed with administrator privileges.
 
 The Maltego setup required Java Runtime Environment 17. The JRE installation process was started as instructed.
 
-![Maltego JRE17 Prerequisite](Screenshots/W2-PM3/06-Maltego-JRE17-Prerequisite-Instructions.png)
+![Maltego JRE17 Prerequisite](screenshots/W2-PM3/06-Maltego-JRE17-Prerequisite-Instructions.png)
 
 The Eclipse Temurin JRE 17 installation was initiated.
 
-![JRE17 Installation](Screenshots/W2-PM3/07-JRE17-Installation-Instructions.png)
+![JRE17 Installation](screenshots/W2-PM3/07-JRE17-Installation-Instructions.png)
 
 The Java Runtime Environment installation completed successfully.
 
-![JRE17 Installation Completed](Screenshots/W2-PM3/08-JRE17-Installation-Completed.png)
+![JRE17 Installation Completed](screenshots/W2-PM3/08-JRE17-Installation-Completed.png)
 
 ---
 
@@ -455,11 +455,11 @@ The Java Runtime Environment installation completed successfully.
 
 After installing the required Java Runtime Environment, the Maltego installation continued.
 
-![Maltego Installation Progress](Screenshots/W2-PM3/09-Maltego-Installation-In-Progress.png)
+![Maltego Installation Progress](screenshots/W2-PM3/09-Maltego-Installation-In-Progress.png)
 
 After installation, Maltego was launched with administrator privileges.
 
-![Maltego Run as Administrator Desktop](Screenshots/W2-PM3/10-Maltego-Run-as-Administrator-Desktop.png)
+![Maltego Run as Administrator Desktop](screenshots/W2-PM3/10-Maltego-Run-as-Administrator-Desktop.png)
 
 ---
 
@@ -467,15 +467,15 @@ After installation, Maltego was launched with administrator privileges.
 
 Maltego Graph was launched and the Maltego ID activation option was selected.
 
-![Maltego Activation Options](Screenshots/W2-PM3/11-Maltego-Activation-Options.png)
+![Maltego Activation Options](screenshots/W2-PM3/11-Maltego-Activation-Options.png)
 
 The license agreement was reviewed and accepted.
 
-![Maltego License Agreement](Screenshots/W2-PM3/12-Maltego-License-Agreement-Accepted.png)
+![Maltego License Agreement](screenshots/W2-PM3/12-Maltego-License-Agreement-Accepted.png)
 
 The browser login option was then used to authenticate the Maltego account.
 
-![Maltego Browser Login Option](Screenshots/W2-PM3/13-Maltego-Browser-Login-Option.png)
+![Maltego Browser Login Option](screenshots/W2-PM3/13-Maltego-Browser-Login-Option.png)
 
 ---
 
@@ -485,15 +485,15 @@ The Maltego authentication page was opened in the browser.
 
 > **Privacy Note:** Personal account information should be redacted before this screenshot is published in a public repository.
 
-![Maltego Login Page](Screenshots/W2-PM3/14-Maltego-Login-Page.png)
+![Maltego Login Page](screenshots/W2-PM3/14-Maltego-Login-Page.png)
 
 Authentication completed successfully.
 
-![Maltego Authentication Complete](Screenshots/W2-PM3/15-Maltego-Authentication-Complete.png)
+![Maltego Authentication Complete](screenshots/W2-PM3/15-Maltego-Authentication-Complete.png)
 
 The Maltego desktop client confirmed that the browser login was successful.
 
-![Maltego Browser Login Successful](Screenshots/W2-PM3/16-Maltego-Browser-Login-Successful.png)
+![Maltego Browser Login Successful](screenshots/W2-PM3/16-Maltego-Browser-Login-Successful.png)
 
 ---
 
@@ -501,11 +501,11 @@ The Maltego desktop client confirmed that the browser login was successful.
 
 The required data sources were selected during the initial Maltego configuration.
 
-![Maltego Select Data Sources](Screenshots/W2-PM3/17-Maltego-Select-Data-Sources.png)
+![Maltego Select Data Sources](screenshots/W2-PM3/17-Maltego-Select-Data-Sources.png)
 
 The configuration process completed successfully and Maltego became ready for use.
 
-![Maltego Configuration Ready](Screenshots/W2-PM3/18-Maltego-Configuration-Ready.png)
+![Maltego Configuration Ready](screenshots/W2-PM3/18-Maltego-Configuration-Ready.png)
 
 ---
 
@@ -513,13 +513,13 @@ The configuration process completed successfully and Maltego became ready for us
 
 A new Maltego graph was created for the footprinting exercise.
 
-![Maltego New Domain Graph](Screenshots/W2-PM3/19-Maltego-New-Domain-Graph.png)
+![Maltego New Domain Graph](screenshots/W2-PM3/19-Maltego-New-Domain-Graph.png)
 
 The Domain entity was configured with the authorized training target:
 
 `networkwalks.com`
 
-![NetworkWalks Domain Configured](Screenshots/W2-PM3/20-NetworkWalks-Domain-Configured.png)
+![NetworkWalks Domain Configured](screenshots/W2-PM3/20-NetworkWalks-Domain-Configured.png)
 
 ---
 
@@ -531,7 +531,7 @@ The Utilities transform used during the investigation was:
 
 `To Emails @domain [Search Engine]`
 
-![Maltego Email Transforms](Screenshots/W2-PM3/21-Maltego-Email-Transforms.png)
+![Maltego Email Transforms](screenshots/W2-PM3/21-Maltego-Email-Transforms.png)
 
 ---
 
@@ -543,7 +543,7 @@ The transform returned the following publicly discoverable email address:
 
 `info@networkwalks.com`
 
-![NetworkWalks Email Transform Result](Screenshots/W2-PM3/22-NetworkWalks-Email-Transform-Result.png)
+![NetworkWalks Email Transform Result](screenshots/W2-PM3/22-NetworkWalks-Email-Transform-Result.png)
 
 ---
 

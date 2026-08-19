@@ -224,7 +224,7 @@ name-server information, and related domain infrastructure.
 
 **Evidence:**
 
-![WHOIS Evidence](screenshots/W2-PM1/<actual-whois-screenshot>.png)
+![WHOIS Evidence](screenshots/W2-PM1/WHOIS.png)
 
 #### Problem Encountered
 

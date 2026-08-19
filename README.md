@@ -216,7 +216,25 @@ The activities also reinforced the importance of clearly documenting the methodo
 Evidence collected while performing authorized footprinting and
 reconnaissance using Kali Linux.
 
-<!-- PM1 screenshots will be inserted here -->
+#### 8.1.1 WHOIS
+
+WHOIS was used to retrieve publicly available domain registration
+information for the authorized target, including registration details,
+name-server information, and related domain infrastructure.
+
+**Evidence:**
+
+![WHOIS Evidence](screenshots/W2-PM1/<actual-whois-screenshot>.png)
+
+#### Problem Encountered
+
+[Your actual WHOIS problem from the practical exercise.]
+
+#### Solution
+
+[The actual solution you performed.]
+
+![WHOIS Problem and Solution](screenshots/W2-PM1/<actual-solution-screenshot>.png)
 
 ### 8.2 W2-PM2 — GHDB-Based Footprinting Attacks
 

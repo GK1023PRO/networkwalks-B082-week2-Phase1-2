@@ -403,109 +403,153 @@ The objective of this practical module was to install and configure Maltego Grap
 
 ---
 
-#### Step 1 — Download Maltego Graph
+#### Step 1 — Access the Official Maltego Website
 
-Maltego Graph for Windows was downloaded from the official Maltego website.
+The official Maltego website was accessed to obtain Maltego Graph for Windows.
 
-![Maltego Graph Download](screenshots/W2-PM3/01-maltego-download.png)
+![Maltego Official Website](Screenshots/W2-PM3/01-Maltego-Official-Website.png)
 
----
+The Maltego download page was then opened.
 
-#### Step 2 — Install Maltego and Java Runtime Environment
-
-The Maltego installer was executed with administrator privileges. The required Java Runtime Environment (JRE 17) was installed successfully before completing the Maltego installation.
-
-![Maltego Installer](screenshots/W2-PM3/02-maltego-installer.png)
-
-![Java JRE Installation](screenshots/W2-PM3/03-java-jre-installation.png)
-
-![Maltego Installation](screenshots/W2-PM3/04-maltego-installation.png)
+![Maltego Download Menu](Screenshots/W2-PM3/02-Maltego-Download-Menu.png)
 
 ---
 
-#### Step 3 — Launch and Configure Maltego
+#### Step 2 — Download Maltego Graph for Windows
 
-After installation, Maltego Graph Desktop was launched and the initial configuration process was started.
+Maltego Graph for Windows was selected from the official download page.
 
-![Maltego Activation](screenshots/W2-PM3/05-maltego-activation.png)
+![Maltego Graph Windows Download](Screenshots/W2-PM3/03-Maltego-Graph-Windows-Download.png)
 
-The Maltego license agreement was accepted to continue the configuration.
+The Windows installer was downloaded successfully.
 
-![Maltego License Agreement](screenshots/W2-PM3/06-license-agreement.png)
+![Maltego Installer Downloaded](Screenshots/W2-PM3/04-Maltego-Installer-Downloaded.png)
 
 ---
 
-#### Step 4 — Authenticate with Maltego ID
+#### Step 3 — Run the Maltego Installer
 
-Browser-based authentication was used to sign in with a Maltego ID.
+The downloaded Maltego installer was executed with administrator privileges.
 
-> **Note:** Personal account information was redacted from the public project evidence.
+![Maltego Run as Administrator](Screenshots/W2-PM3/05-Maltego-Run-as-Administrator.png)
 
-![Maltego Login](screenshots/W2-PM3/07-maltego-login-redacted.png)
+---
+
+#### Step 4 — Install Java Runtime Environment 17
+
+The Maltego setup required Java Runtime Environment 17. The JRE installation process was started as instructed.
+
+![Maltego JRE17 Prerequisite](Screenshots/W2-PM3/06-Maltego-JRE17-Prerequisite-Instructions.png)
+
+The Eclipse Temurin JRE 17 installation was initiated.
+
+![JRE17 Installation](Screenshots/W2-PM3/07-JRE17-Installation-Instructions.png)
+
+The Java Runtime Environment installation completed successfully.
+
+![JRE17 Installation Completed](Screenshots/W2-PM3/08-JRE17-Installation-Completed.png)
+
+---
+
+#### Step 5 — Complete Maltego Installation
+
+After installing the required Java Runtime Environment, the Maltego installation continued.
+
+![Maltego Installation Progress](Screenshots/W2-PM3/09-Maltego-Installation-In-Progress.png)
+
+After installation, Maltego was launched with administrator privileges.
+
+![Maltego Run as Administrator Desktop](Screenshots/W2-PM3/10-Maltego-Run-as-Administrator-Desktop.png)
+
+---
+
+#### Step 6 — Configure Maltego
+
+Maltego Graph was launched and the Maltego ID activation option was selected.
+
+![Maltego Activation Options](Screenshots/W2-PM3/11-Maltego-Activation-Options.png)
+
+The license agreement was reviewed and accepted.
+
+![Maltego License Agreement](Screenshots/W2-PM3/12-Maltego-License-Agreement-Accepted.png)
+
+The browser login option was then used to authenticate the Maltego account.
+
+![Maltego Browser Login Option](Screenshots/W2-PM3/13-Maltego-Browser-Login-Option.png)
+
+---
+
+#### Step 7 — Authenticate the Maltego Account
+
+The Maltego authentication page was opened in the browser.
+
+> **Privacy Note:** Personal account information should be redacted before this screenshot is published in a public repository.
+
+![Maltego Login Page](Screenshots/W2-PM3/14-Maltego-Login-Page.png)
 
 Authentication completed successfully.
 
-![Authentication Complete](screenshots/W2-PM3/08-authentication-complete.png)
+![Maltego Authentication Complete](Screenshots/W2-PM3/15-Maltego-Authentication-Complete.png)
 
-The Maltego desktop application confirmed that the browser login was successful.
+The Maltego desktop client confirmed that the browser login was successful.
 
-![Browser Login Successful](screenshots/W2-PM3/09-browser-login-successful.png)
-
----
-
-#### Step 5 — Configure Data Sources
-
-The Utilities data source was selected during the initial Maltego configuration.
-
-![Select Data Sources](screenshots/W2-PM3/10-select-data-sources.png)
-
-The Maltego client was then initialized successfully and became ready for use.
-
-![Maltego Ready](screenshots/W2-PM3/11-maltego-ready.png)
+![Maltego Browser Login Successful](Screenshots/W2-PM3/16-Maltego-Browser-Login-Successful.png)
 
 ---
 
-#### Step 6 — Create the Target Domain Entity
+#### Step 8 — Configure Maltego Data Sources
 
-A new Maltego graph was created and a Domain entity was added for the authorized training target:
+The required data sources were selected during the initial Maltego configuration.
+
+![Maltego Select Data Sources](Screenshots/W2-PM3/17-Maltego-Select-Data-Sources.png)
+
+The configuration process completed successfully and Maltego became ready for use.
+
+![Maltego Configuration Ready](Screenshots/W2-PM3/18-Maltego-Configuration-Ready.png)
+
+---
+
+#### Step 9 — Create the Target Domain Entity
+
+A new Maltego graph was created for the footprinting exercise.
+
+![Maltego New Domain Graph](Screenshots/W2-PM3/19-Maltego-New-Domain-Graph.png)
+
+The Domain entity was configured with the authorized training target:
 
 `networkwalks.com`
 
-![NetworkWalks Domain Entity](screenshots/W2-PM3/12-networkwalks-domain.png)
-
-The Domain entity properties were verified to ensure that the correct target was configured.
-
-![NetworkWalks Domain Properties](screenshots/W2-PM3/13-domain-properties.png)
+![NetworkWalks Domain Configured](Screenshots/W2-PM3/20-NetworkWalks-Domain-Configured.png)
 
 ---
 
-#### Step 7 — Search for Email Transforms
+#### Step 10 — Search for Email Transforms
 
-The available transforms were searched for email-related reconnaissance capabilities.
+The available Maltego transforms were searched for email-related OSINT capabilities.
 
-The following Utilities transform was selected:
+The Utilities transform used during the investigation was:
 
 `To Emails @domain [Search Engine]`
 
-![Email Transform Selection](screenshots/W2-PM3/14-email-transform.png)
+![Maltego Email Transforms](Screenshots/W2-PM3/21-Maltego-Email-Transforms.png)
 
 ---
 
-#### Step 8 — Execute the Email Discovery Transform
+#### Step 11 — Execute the Email Transform
 
-The email discovery transform was executed against `networkwalks.com`.
+The selected transform was executed against the `networkwalks.com` Domain entity.
 
 The transform returned the following publicly discoverable email address:
 
 `info@networkwalks.com`
 
-![Email Transform Result](screenshots/W2-PM3/15-email-transform-result.png)
+![NetworkWalks Email Transform Result](Screenshots/W2-PM3/22-NetworkWalks-Email-Transform-Result.png)
 
 ---
 
-#### Step 9 — Final Maltego Result
+#### Step 12 — Verify the Final Result
 
-The completed Maltego graph displayed the relationship between the target domain and the discovered email address:
+The completed graph displayed the relationship between the target domain and the email address returned by the Maltego transform:
 
 ```text
 networkwalks.com

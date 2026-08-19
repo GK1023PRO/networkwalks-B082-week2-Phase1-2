@@ -316,7 +316,75 @@ The remaining footprinting tools — WhatWeb, Nslookup, Curl, WafW00f, and DNSRe
 
 **Problems Encountered & Solutions Evidence:**
 
-<!-- Insert the relevant uploaded Problems Encountered & Solutions screenshots here. -->
+The following screenshots document the problems encountered during the W2-PM1 practical exercise, the troubleshooting process performed, and the solutions applied.
+
+![Problem Encountered and Solution 1](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions.png)
+
+![Problem Encountered and Solution 2](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions%20(2).png)
+
+![Problem Encountered and Solution 3](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions%20(3).png)
+
+![Problem Encountered and Solution 4](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions%20(4).png)
+
+![Problem Encountered and Solution 5](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions%20(5).png)
+
+![Problem Encountered and Solution 6](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions%20(6).png)
+
+![Problem Encountered and Solution 7](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions%20(7).png)
+
+![Problem Encountered and Solution 8](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions%20(8).png)
+
+![Problem Encountered and Solution 9](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions%20(9).png)
+
+![Problem Encountered and Solution 10](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions%20(10).png)
+
+![Problem Encountered and Solution 11](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions%20(11).png)
+
+![Problem Encountered and Solution 12](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions%20(12).png)
+
+![Problem Encountered and Solution 13](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions%20(13).png)
+
+![Problem Encountered and Solution 14](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions%20(14).png)
+
+![Problem Encountered and Solution 15](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions%20(15).png)
+
+![Problem Encountered and Solution 16](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions%20(16).png)
+
+![Problem Encountered and Solution 17](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions%20(17).png)
+
+![Problem Encountered and Solution 18](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions%20(18).png)
+
+![Problem Encountered and Solution 19](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions%20(19).png)
+
+![Problem Encountered and Solution 20](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions%20(20).png)
+
+![Problem Encountered and Solution 21](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions%20(21).png)
+
+![Problem Encountered and Solution 22](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions%20(22).png)
+
+![Problem Encountered and Solution 23](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions%20(23).png)
+
+![Problem Encountered and Solution 24](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions%20(24).png)
+
+![Problem Encountered and Solution 25](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions%20(25).png)
+
+![Problem Encountered and Solution 26](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions%20(26).png)
+
+![Problem Encountered and Solution 27](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions%20(27).png)
+
+![Problem Encountered and Solution 28](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions%20(28).png)
+
+![Problem Encountered and Solution 29](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions%20(29).png)
+
+![Problem Encountered and Solution 30](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions%20(30).png)
+
+![Problem Encountered and Solution 31](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions%20(31).png)
+
+![Problem Encountered and Solution 32](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions%20(32).png)
+
+![Problem Encountered and Solution 33](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions%20(33).png)
+
+![Problem Encountered and Solution 34](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions%20(34).png)
 
 ### 8.2 W2-PM2 — GHDB-Based Footprinting Attacks
 

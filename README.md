@@ -386,12 +386,218 @@ The following screenshots document the problems encountered during the W2-PM1 pr
 
 ![Problem Encountered and Solution 34](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions%20(34).png)
 
-### 8.2 W2-PM2 — GHDB-Based Footprinting Attacks
+## 8.2 W2-PM2 — GHDB-Based Footprinting Attacks
 
-Evidence collected while performing the assigned GHDB-based
-footprinting activities using Google search operators.
+This practical module focused on Google Hacking Database (GHDB) techniques and advanced Google search operators for passive information gathering and footprinting.
 
-<!-- PM2 screenshots will be inserted here -->
+The activities involved identifying publicly indexed information using Google dorks and documenting the results obtained during the exercise.
+
+> **Ethical Use Notice:**  
+> The activities documented in this section were performed strictly for educational and cybersecurity training purposes. Publicly indexed resources were observed only. No authentication bypass, credential guessing, exploitation, configuration changes, or unauthorized modification was performed.
+
+---
+
+### Objective
+
+The objective of this practical module was to:
+
+- Explore the Exploit Database and Google Hacking Database.
+- Understand the purpose of Google dorks.
+- Use advanced Google search operators for passive footprinting.
+- Identify publicly indexed webcam interfaces.
+- Identify publicly indexed directories containing mathematics PDF resources.
+- Document the search queries and results obtained during the exercise.
+
+---
+
+## Task 1 — Publicly Accessible Security Camera Listings
+
+The first task required finding **10 live security-camera links exposed and accessible from the Internet** and recording the relevant Google dork used to identify each result.
+
+No usernames or passwords were used during this exercise.
+
+---
+
+### Step 1 — Access the Exploit Database
+
+The Exploit Database was accessed to begin exploring publicly available security research resources.
+
+![Exploit Database](screenshots/W2-PM2/01-Exploit-Database.png)
+
+---
+
+### Step 2 — Access the Google Hacking Database
+
+The Google Hacking Database (GHDB) section of Exploit Database was opened.
+
+GHDB contains search queries that demonstrate how advanced Google search operators can locate publicly indexed information.
+
+![Google Hacking Database](screenshots/W2-PM2/02-Google-Hacking-Database.png)
+
+---
+
+### Step 3 — Locate a Webcam-Related Google Dork
+
+The GHDB listings were reviewed for queries related to webcams and Internet-accessible camera interfaces.
+
+A webcamXP-related query was identified for the exercise.
+
+![GHDB Webcam Dork Selection](screenshots/W2-PM2/03-GHDB-Webcam-Dork-Selection.png)
+
+One of the identified queries was:
+
+```text
+intitle:"webcamXP" inurl:8080
+```
+
+Additional queries used during the task included:
+
+```text
+intitle:"webcam 7" inurl:'/gallery.html'
+```
+
+```text
+intitle:webcam 7 inurl:8080 -intext:8080
+```
+
+```text
+intitle:"webcamxp" "Flash JPEG Stream"
+```
+
+---
+
+### Step 4 — Search Google Using the Webcam Dork
+
+The selected GHDB query was copied and used as a Google search query.
+
+![GHDB Webcam Dork Google Search](screenshots/W2-PM2/04-GHDB-Webcam-Dork-Google-Search.png)
+
+---
+
+### Step 5 — Execute the Webcam Search Query
+
+The webcam-related Google dork was entered into Google Search to identify publicly indexed webcamXP interfaces.
+
+![Google Webcam Dork Query](screenshots/W2-PM2/05-Google-Webcam-Dork-Query.png)
+
+---
+
+### Step 6 — Review the Search Results
+
+Google returned publicly indexed results matching the webcam-related search operators.
+
+The results were manually reviewed as part of the passive footprinting exercise.
+
+![Google Webcam Dork Results](screenshots/W2-PM2/06-Google-Webcam-Dork-Results.png)
+
+The same search and verification process was repeated using the relevant Google dorks until the required **10 listings** were identified.
+
+---
+
+### Task 1 Results
+
+| No. | Link | Relevant Dork | Username / Password |
+|---:|---|---|---|
+| 1 | `http://109.233.191.130:8080/` | `intitle:"webcamXP" inurl:8080` | --- |
+| 2 | `http://109.206.96.249:8080/` | `intitle:"webcam 7" inurl:'/gallery.html'` | --- |
+| 3 | `http://68.115.218.130:32479/` | `intitle:"webcam 7" inurl:'/gallery.html'` | --- |
+| 4 | `http://72.199.200.5:8080/` | `intitle:"webcamXP" inurl:8080` | --- |
+| 5 | `http://139.64.168.120:8080/` | `intitle:"webcamXP" inurl:8080` | --- |
+| 6 | `http://85.93.53.175:8080/` | `intitle:"webcamXP" inurl:8080` | --- |
+| 7 | `http://75.149.26.30:1024/` | `intitle:"webcamXP" inurl:8080` | --- |
+| 8 | `http://109.206.96.75:8080/` | `intitle:webcam 7 inurl:8080 -intext:8080` | --- |
+| 9 | `http://178.71.15.232:8080/` | `intitle:"webcamxp" "Flash JPEG Stream"` | --- |
+| 10 | `http://91.3.84.143:8080/` | `intitle:"webcamxp" "Flash JPEG Stream"` | --- |
+
+**Task 1 Result:** 10/10 required listings were documented.
+
+---
+
+## Task 2 — Mathematics PDF Listings
+
+The second task required finding **10 listings containing downloadable mathematics ebooks in PDF format**.
+
+The Google dork used during the exercise was:
+
+```text
+intitle:index.of "parent directory" mathematics pdf
+```
+
+---
+
+### Step 7 — Search for Mathematics PDF Directories
+
+The Google dork was entered into Google Search to identify publicly indexed directories containing mathematics-related PDF resources.
+
+![Task 2 Mathematics PDF Google Search](screenshots/W2-PM2/07-Task2-Mathematics-PDF-Google-Search.png)
+
+The returned results were manually reviewed, and the same process was repeated until the required **10 listings** were documented.
+
+---
+
+### Task 2 Results
+
+| No. | Link | Relevant Dork | Username / Password |
+|---:|---|---|---|
+| 1 | `http://erewhon.superkuh.com/library/Math/` | `intitle:index.of "parent directory" mathematics pdf` | --- |
+| 2 | `https://ochicken.net/library/Mathematics/` | `intitle:index.of "parent directory" mathematics pdf` | --- |
+| 3 | `https://www.unm.edu/~megrad/Math/` | `intitle:index.of "parent directory" mathematics pdf` | --- |
+| 4 | `https://math.dartmouth.edu/~carlp/PDF/` | `intitle:index.of "parent directory" mathematics pdf` | --- |
+| 5 | `https://www.netlib.org/math/docpdf/` | `intitle:index.of "parent directory" mathematics pdf` | --- |
+| 6 | `https://education.giakonda.org.uk/Maths/` | `intitle:index.of "parent directory" mathematics pdf` | --- |
+| 7 | `https://docs.bartonccc.edu/syllabus/Master/MATH/?C=S;O=A` | `intitle:index.of "parent directory" mathematics pdf` | --- |
+| 8 | `https://maths.nuigalway.ie/~rquinlan/linearalgebra/` | `intitle:index.of "parent directory" mathematics pdf` | --- |
+| 9 | `https://sajapuriacollege.ac.in/pdf/pdf/MATHEMATICS/` | `intitle:index.of "parent directory" mathematics pdf` | --- |
+| 10 | `https://www.pndascollege.in/pdf/academic-calendar/mathematics/` | `intitle:index.of "parent directory" mathematics pdf` | --- |
+
+**Task 2 Result:** 10/10 required mathematics PDF listings were documented.
+
+---
+
+## Key Observations
+
+This practical exercise demonstrated how search-engine indexing can unintentionally expose information and Internet-facing services.
+
+The main concepts demonstrated were:
+
+- Google Hacking Database reconnaissance.
+- Advanced Google search operators.
+- `intitle:` filtering.
+- `inurl:` filtering.
+- `intext:` filtering.
+- Directory-index discovery.
+- Passive information gathering.
+- Publicly indexed service discovery.
+- OSINT-oriented footprinting.
+- Security implications of Internet-exposed resources.
+
+---
+
+## Security Considerations
+
+The exercise demonstrates the importance of properly securing Internet-facing systems and controlling which resources are indexed by search engines.
+
+Administrators should:
+
+- Avoid exposing unnecessary services directly to the Internet.
+- Require authentication for sensitive interfaces.
+- Disable directory listing where it is not required.
+- Apply appropriate firewall and access-control rules.
+- Keep Internet-facing applications and devices updated.
+- Review publicly indexed information associated with organizational infrastructure.
+- Prevent sensitive files and administrative interfaces from being indexed by search engines.
+
+---
+
+## Completion Status
+
+| Task | Requirement | Status |
+|---|---|---|
+| Task 1 | Find 10 publicly accessible security-camera listings | ✅ 10/10 |
+| Task 2 | Find 10 mathematics PDF listings | ✅ 10/10 |
+
+**W2-PM2 — GHDB-Based Footprinting Attacks: Completed ✅**
+---
 
 ### 8.3 W2-PM3 — Maltego-Based Footprinting Attacks
 

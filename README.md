@@ -1107,7 +1107,17 @@ The broader `-b all` reconnaissance scan demonstrated that theHarvester supports
 This highlighted the difference between freely accessible reconnaissance sources and API-dependent intelligence providers.
 
 ---
+### Saved Command Outputs
 
+In addition to the screenshot evidence, the raw command-line outputs generated during the W2-PM4 theHarvester activities were preserved as text files.
+
+| Activity | Saved Output |
+|---|---|
+| Baidu Reconnaissance Scan | [View Baidu Output](outputs/W2-PM4/theHarvester-baidu.txt) |
+| Multi-Source Reconnaissance Scan | [View All-Sources Output](outputs/W2-PM4/theHarvester-microsoft-all.txt) |
+
+The saved outputs provide the raw command-line evidence corresponding to the theHarvester reconnaissance activities documented in the screenshots.
+---
 ### Skills Practiced
 
 This practical module provided hands-on experience with:

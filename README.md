@@ -385,6 +385,22 @@ The following screenshots document the problems encountered during the W2-PM1 pr
 ![Problem Encountered and Solution 33](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions%20(33).png)
 
 ![Problem Encountered and Solution 34](screenshots/W2-PM1/Problems%20Encountered%20%26%20Solutions%20(34).png)
+---
+### Saved Command Outputs
+
+In addition to the screenshot evidence, the raw outputs generated during the W2-PM1 footprinting activities were preserved as text files.
+
+| Tool | Saved Output |
+|---|---|
+| WHOIS | [View WHOIS Output](outputs/W2-PM1/whois-networkwalks.txt) |
+| WhatWeb | [View WhatWeb Output](outputs/W2-PM1/whatweb-networkwalks.txt) |
+| Nslookup | [View Nslookup Output](outputs/W2-PM1/nslookup-networkwalks.txt) |
+| cURL | [View cURL Header Output](outputs/W2-PM1/curl-networkwalks.txt) |
+| WafW00f | [View WafW00f Output](outputs/W2-PM1/wafw00f-networkwalks.txt) |
+| DNSRecon | [View DNSRecon Output](outputs/W2-PM1/dnsrecon-networkwalks.txt) |
+
+The saved outputs provide the raw command-line evidence corresponding to the reconnaissance activities documented in the screenshots.
+---
 
 ## 8.2 W2-PM2 — GHDB-Based Footprinting Attacks
 

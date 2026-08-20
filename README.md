@@ -779,7 +779,7 @@ networkwalks.com
        v
 info@networkwalks.com
 ```
-
+---
 ## 8.4 W2-PM4 — theHarvester-Based Footprinting Attacks
 
 ### Objective
